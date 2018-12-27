@@ -34,7 +34,7 @@ function git_branch {
 
 #PS1='\e[1;35mroot\e[m\e[1;34m@Linux\e[m\e[0;35m_\e[m\e[1;32m<\w>\e[m'
 #PS1='\e[1;35mxxiong\e[m\e[1;34m@CQU611\e[m\e[0;35m_\e[m\e[1;32m<\w>\e[m\e[0;31m$(git_branch)\e[m'
-PS1="\e[1;35m\u\e[m\e[1;37m@\e[m\e[1;36m\H\e[m\e[1;32m[\t]\e[m\e[1;33m<\W>\e[m\e[1;36m\$(git_branch)\e[m\\$ "
+PS1="\e[1;35m\u\e[m\e[1;37m@\e[m\e[1;36m\H\e[m\e[1;32m[\t]\e[m\e[1;33m<\W>\e[m\e[1;31m\$(git_branch)\e[m\\$ "
 
 
 
