@@ -56,8 +56,7 @@ function git-branch-prompt {
 #PS1="\e[1;35m\u\e[m\e[1;37m@\e[m\e[1;36m\H\e[m\e[1;32m[\t]\e[m\e[1;33m<\W>\e[m\e[1;31m\$(git_branch)\e[m\\$ "
 PS1="\u@\H[\t]<\W>\$(git_branch)\\$ "
 
-DATESTR=`date`
-screen -S ${DATESTR:18:8}
+screen -S `date | awk -F' ' '{for(i=1;i<NF;i++) print $i}' | grep : | sed 's/://g'`
 
 
 #############################################
